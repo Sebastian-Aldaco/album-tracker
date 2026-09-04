@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{display: flex;
+}
+
+.form-div{
+    max-width: 10%;
+    min-height: 100dvh;
+    border-right: 2px solid black;
+    padding: 20px;
+}
+
+form{
+    margin-block: 50px;
+}
+
+main{
+    min-width: 70%;
+    padding: 20px;
+    border: 10px solid black;
+    display: grid;
+    grid-template-columns: repeat (auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.card{
+    max-height: fit-content;
+}

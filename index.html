@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="container mt-5">
+
+        <div class="row border rounde album-container">
+
+            <div class="col-3 border-end p-4">
+
+                <form id="album-form">
+                    <input 
+                        name="title" 
+                        type="text" 
+                        class="form-control mb-3" placeholder="Title">
+
+                    <input 
+                        name="artist" 
+                        type="text" 
+                        class="form-control mb-3" placeholder="Artist">
+
+                    <input 
+                        name="releasedYear" 
+                        type="text" 
+                        class="form-control mb-3" placeholder="Released Year">
+
+                    <input 
+                        name="genre" 
+                        type="text" 
+                        class="form-control mb-3" placeholder="Genre">
+
+                    <input 
+                        name="rating" 
+                        type="number" 
+                        class="form-control mb-3" placeholder="Rating" 
+                        min="1" 
+                        max="5">
+
+                    <div class="form-check mb-3">
+                        <input 
+                        name="listened" 
+                        type="checkbox" class="form-check-input" 
+                        id="listened">
+
+                        <label class="form-check-label" for="listened">
+                            Listened
+                        </label>
+                    </div>
+
+                    <button type="submit" class=" mt-5 btn btn-primary w-100" >
+                        Enviar
+                    </button>
+                </form>
+            </div>
+         <main id="album-container" class="col-9 p-4">
+            
+         </main>
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
